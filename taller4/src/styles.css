@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+:root{
+  --color-titulo: #ff4900;
+  --tam-titulo: 2rem;
+  --color-parrafo1: #0093FF;
+  --tam-parrafo1: 1rem;
+  --font-arial: Arial, Helvetica, sans-serif;
+  --color-parrafo2: #c500ff;
+  --tam-parrafo2: 12px;
+  --font-nerko: 'Nerko One', cursive;
+  --link-color: #001bff;
+  --link-visited: #4CAF50;
+  --link-hover: #ff6600;
+  --thead-bg: #000000;
+  --thead-fg: #ffffff;
+  --thead-size: 1.5rem;
+  --fila-imp-bg: #bec1c3;
+  --fila-imp-fg: #000000;
+  --fila-centro-bg: #045795;
+  --fila-centro-fg: #ffffff;
+  --fila-size: 1.5rem;
+}
+
+html { font-size: 16px; }
+body { font-family: var(--font-arial); }
+
+h2{
+  color: var(--color-titulo);
+  font-size: var(--tam-titulo);
+}
+
+
+p.parrafo-arial {
+  font-size: var(--tam-parrafo1);
+  color: var(--color-parrafo1);
+  font-family: var(--font-arial);
+}
+
+
+p.parrafo-nerko {
+  font-size: var(--tam-parrafo2);
+  color: var(--color-parrafo2);
+  font-family: var(--font-nerko);
+}
+
+a{
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited{ color: var(--link-visited); }
+a:hover{
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+th{
+  background-color: var(--thead-bg);
+  color: var(--thead-fg);
+  font-size: var(--thead-size);
+}
+
+tbody tr:nth-child(1),
+tbody tr:nth-child(3){
+  background-color: var(--fila-imp-bg);
+  color: var(--fila-imp-fg);
+  font-size: var(--fila-size);
+}
+tbody tr:nth-child(2){
+  background-color: var(--fila-centro-bg);
+  color: var(--fila-centro-fg);
+  font-size: var(--fila-size);
+}
